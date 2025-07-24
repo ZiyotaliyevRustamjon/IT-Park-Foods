@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container .titleBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    padding: 10px;
+}
+.container .headerBar h1 span {
+    font-size: 12px;
+    vertical-align: top;
+    color: #777;
+    margin-left: 10px;
+}
+.container .headerBar .textEl {
+    padding: 20px;
+    background-color: rgba(255, 217, 0, 0.411);
+    color: #777;
+}
+.container .headerBar .textEl::before {
+    content: "Preparation : ";
+    color: #000000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.container .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 100px;
+}
+.cards .imageBar {
+    width: 40%;
+}
+.cards .imageBar img {
+    border-radius: 20px;
+}
+.cards .textBar {
+    width: 50%;
+}
+.textBar .resBar {
+    height: 370px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+}
+.textBar .resBar div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+.textBar .resBar div .resEl1 {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.textBar .resBar div .resEl2 {
+    color: #666;
+}
+.textBar .resBtn {
+    width: 100%;
+    padding: 10px 50px;
+    background-color: green;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+
+@media (max-width: 768px) {
+    .container .cards {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .cards .imageBar {
+        width: 100%;
+    }
+    .cards .textBar {
+        width: 100%;
+    }
+    .textBar .resBar  {
+        width: 100%;
+    }
+}
